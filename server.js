@@ -15,6 +15,6 @@ mongoose.connect(config.url, { useNewUrlParser: true })
 
 
 const server =http.createServer(app);
-server.listen(port, () => {
-    console.log('connacted.....',port);
+server.listen(port || process.env.SERVER_PORT, () => {
+    console.log('connacted.....',port || process.env.SERVER_PORT);
 });

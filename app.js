@@ -34,7 +34,7 @@ app.use((req, res, next) => {
     next();
 });
 
-const userRoute = require('./api/routes/userRoutes');
+const userRoute = require('./API/routes/userRoutes');
 app.use('/sellandleave',userRoute);
 
 module.exports = app;

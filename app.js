@@ -34,6 +34,10 @@ app.use((req, res, next) => {
     next();
 });
 
+app.get('/', function(req, res){
+    res.send("Hello world!");
+ });
+
 const userRoute = require('./API/routes/userRoutes');
 app.use('/sellandleave',userRoute);
 

@@ -5,7 +5,7 @@ import decode from 'jwt-decode';
 export default class RegisterService {   
 
     constructor() {
-        this.domain = '18.218.106.235';
+        this.domain = 'http://18.218.106.235';
         // this.domain = 'http://localhost:3300'; // API server domain
     }    
 

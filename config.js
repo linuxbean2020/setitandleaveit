@@ -1,3 +1,3 @@
 module.exports = {
-    url: 'mongodb://localhost:27017/setitandleaveit'
+    url: 'mongodb://18.218.106.235:27017/setitandleaveit'
 }

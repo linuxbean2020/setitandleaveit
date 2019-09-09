@@ -34,9 +34,13 @@ app.use((req, res, next) => {
     next();
 });
 
-app.get('/', function(req, res){
-    res.send("Hello world!");
- });
+// app.get('/', function(req, res){
+//     res.send("Hello world!");
+//  });
+
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+});
 
 const userRoute = require('./API/routes/userRoutes');
 app.use('/sellandleave',userRoute);
